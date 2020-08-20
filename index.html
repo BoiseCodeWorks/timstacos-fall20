@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <audio src="fire-mixtape.mp3" id="song"></audio>
+  <header class="container-fluid bg-primary">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1>Tims Tacos</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row mt-2 justify-content-around" id="items">
+    </div>
+    <div class="row checkout">
+      <div class="col-6">
+        <h2>Total: $ <span id="total-cost">0</span> </h2>
+        <p id="total-items"></p>
+        <button class="btn-primary btn" onclick="buyNow()">Buy now</button>
+      </div>
+      <div class="col-6">
+        <h3 id="message" class="text-success"></h3>
+      </div>
+    </div>
+
+  </main>
+  <footer class="container-fluid bg-primary">
+    <div class="row text-center">
+      <div class="col-12">
+        <h3 onclick="hotSauce()">Made with love by Fall 2020</h3>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+  <script src='https://kit.fontawesome.com/d2e00f75e8.js' crossorigin='anonymous'></script>
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
+    integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
+    crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
+    integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'
+    crossorigin='anonymous'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
+    integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
+    crossorigin='anonymous'></script>
+</body>
+
+</html>
